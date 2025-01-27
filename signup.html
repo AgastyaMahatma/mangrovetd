@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MangroveTD</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="x-icon" href="Images/mangrove.png">
+  <link rel="stylesheet" href="css/signupcss.css">
+  <script src="javascript/signupjs.js"></script>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><img src="Images/closemenu.png" alt="Closeicon" id="close"></a></li>
+      <li><a href="#seperator1">About</a></li>
+      <li><a href="teamwork.html">Teamwork</a></li>
+      <li><a href="https://forms.gle/R5siijCzYKczgjk86" target="_blank">Review</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <ul class="nonsidebar">
+      <li><a href="index.html">Hawk Tuah</a></li>
+      <li class="hideOnMobile"><a href="#seperator1">About</a></li>
+      <li class="hideOnMobile"><a href="teamwork.html">Teamwork</a></li>
+      <li class="hideOnMobile"><a href="https://forms.gle/R5siijCzYKczgjk86" target="_blank">Review</a></li>
+      <li class="hideOnMobile"><a href="signup.html">Sign Up</a></li>
+      <li onclick=showSidebar() class="menu-button"><a href="#"><img src="Images/menu.png" alt="Menuicon" id="menu"></a></li>
+    </ul>
+  </nav>
+
+
+  <section class="body">
+    <div id="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Log In</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Sign up an account to make the best experience of your life
+            </p>
+            <button class="btn transparent" id="sign-up-btn" onclick=addSignUpMode()>
+              Sign up
+            </button>
+          </div>
+          <img src="images/pic1.png" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              We are welcome to have you back. Log In to continue into our website
+            </p>
+            <button class="btn transparent" id="sign-in-btn" onclick=removeSignUpMode()>
+              Log In
+            </button>
+          </div>
+          <img src="images/pic3.png" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MangroveTD</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="x-icon" href="Images/mangrove.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="javascript/script.js"></script>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><img src="Images/closemenu.png" alt="Closeicon" id="close"></a></li>
+      <li><a href="#seperator1">About</a></li>
+      <li><a href="teamwork.html">Teamwork</a></li>
+      <li><a href="https://forms.gle/R5siijCzYKczgjk86" target="_blank">Review</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <ul class="nonsidebar">
+      <li><a href="#openingpage">Hawk Tuah</a></li>
+      <li class="hideOnMobile"><a href="#seperator1">About</a></li>
+      <li class="hideOnMobile"><a href="teamwork.html">Teamwork</a></li>
+      <li class="hideOnMobile"><a href="https://forms.gle/R5siijCzYKczgjk86" target="_blank">Review</a></li>
+      <li class="hideOnMobile"><a href="signup.html">Sign Up</a></li>
+      <li onclick=showSidebar() class="menu-button"><a href="#"><img src="Images/menu.png" alt="Menuicon" id="menu"></a></li>
+    </ul>
+  </nav>
+
+
+  <section class="body">
+    <section id="openingpage">
+      <div class="content">
+        <h1>Every student's Dream</h1>
+        <p>Your online education platform that helps organize schedules, tasks, grades, and more</p>
+        <button id="signup">SIGN UP</button>
+      </div>
+    </section>
+
+    <!-- <hr id="seperator1"> -->
+
+     <section id="aboutpage">
+       <div class="main">
+        <div class="heading">
+          <h1>Your Path to Knowledge</h1>
+          <p>Empowering Minds, One Lesson at a Time</p>
+        </div>
+        <div class="container">
+          <section class="about">
+            <div class="about-image">
+              <img src="images/image4.jpeg" alt="about-image">
+            </div>
+            <div class="about-content">
+              <h2>Your All-in-One Learning Hub</h2>
+              <p>
+                At MangroveTD, we believe that education should be accessible, engaging, and effective. Our mission is to empower learners of all ages by providing a comprehensive platform that has all learning needs in one platform.
+                <br><br>
+                Students love MangroveTD for how easy it is to schedule tasks, organize homework, study effectively, and many more.
+              </p>
+            </div>
+          </section>
+
+          <section class="offer">
+            <div class="offer-content">
+              <h2>What We Offer:</h2>
+              <ul>
+                <li><strong>Personalized Scheduling:</strong> Create custom schedules to balance your academic commitments with personal life.</li>
+                <li><strong>Task Management:</strong> Stay organized with our powerful task management system.</li>
+                <li><strong>Homework Tracker:</strong> Keep track of assignments, deadlines, and progress.</li>
+                <li><strong>Study Timer:</strong> Focus on your studies with our built-in study timer.</li>
+                <li><strong>Grade Tracker:</strong> Monitor your academic performance and set goals.</li>
+                <li><strong>Note-Taking and Organization:</strong> Store and access your notes in a secure, cloud-based system.</li>
+              </ul>
+            </div>
+            <div class="offer-image">
+              <img src="images/image1.jpeg" alt="kid-studying">
+            </div>
+          </section>
+        </div>
+     </section>
+  </section>
+</body>
+</html>
